@@ -1,4 +1,5 @@
 package Assignment2
+//Q6: check if the given string is palindrome or not
 
 object QuestionNo6 extends App{
 
