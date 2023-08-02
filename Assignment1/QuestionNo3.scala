@@ -6,17 +6,17 @@ object QuestionNo3 extends App {
 
 
   // Recursive way
-  def findElementRecursive(list: List[Int], target: Int): Option[Int] = list match {
+  def findElementRecursive(list: List[Int], key: Int): Option[Int] = list match {
     case Nil => None
     case head :: tail =>
-      if (head == target) Some(head)
-      else findElementRecursive(tail, target)
+      if (head == key) Some(head)
+      else findElementRecursive(tail, key)
   }
 
   // Test cases
   val myList = List(1, 2, 3, 4, 5)
-  println(findElementRecursive(myList, 3)) // Output: Some(3)
-  println(findElementRecursive(myList, 6)) // Output: None
+  println(findElementRecursive(myList, 3)) 
+  println(findElementRecursive(myList, 6)) 
 
 
 
