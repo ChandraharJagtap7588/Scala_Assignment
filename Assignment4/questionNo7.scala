@@ -15,16 +15,13 @@ object questionNo7 extends App{
   resultUsingMap.foreach(println)
 
   // Using flatMap and yield
-  val resultUsingFlatMap = for {
-    innerList <- list
+val flatMappedResult = list.flatMap { innerList =>
+  for {
+    element <- innerList
   } yield {
-    innerList match {
-      case Nil => "Empty List"
-      case _ => innerList.mkString(", ")
-    }
+    println(element)
   }
-
-  resultUsingFlatMap.foreach(println)
+}
 
 
 }
